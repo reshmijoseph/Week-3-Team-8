@@ -2,6 +2,8 @@ package com.techelevator.hr;
 
 import com.techelevator.Person;
 
+import java.util.Map;
+
 public class Employee extends Person {
 
     private int employeeId;
@@ -14,7 +16,7 @@ public class Employee extends Person {
     }
 
     public Employee(String firstName, String lastName, String title, double salary) {
-        super(firstName,lastName);
+        super(firstName, lastName);
         this.title = title;
         this.salary = salary;
     }
@@ -25,7 +27,7 @@ public class Employee extends Person {
     }
 
     public void raiseSalary(double percentage) {
-        if( percentage > 0) {
+        if (percentage > 0) {
             this.salary += salary * percentage / 100;
         }
     }
@@ -63,6 +65,20 @@ public class Employee extends Person {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public double getBalanceDue(Map<String, Double> servicesRendered) {
+        double totalBalance = 0;
+
+        for (String service : servicesRendered.keySet()) {
+            if (service.equalsIgnoreCase("walking")) {
+                totalBalance += (servicesRendered.get(service) / 2);
+            } else {
+                totalBalance += servicesRendered.get(service);
+            }
+        }
+
+        return totalBalance;
     }
 
 }

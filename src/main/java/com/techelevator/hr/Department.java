@@ -43,7 +43,7 @@ public class Department {
     }
 
     public void setDepartmentHead(Manager manager) {
-        if( manager.getTitle().startsWith("Manager") || manager.getTitle().startsWith("Director") ) {
+        if (manager.getTitle().startsWith("Manager") || manager.getTitle().startsWith("Director")) {
             this.departmentHead = manager;
         }
     }

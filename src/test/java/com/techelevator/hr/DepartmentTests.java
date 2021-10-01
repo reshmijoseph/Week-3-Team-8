@@ -14,7 +14,7 @@ public class DepartmentTests {
         Department oldDept = new Department("Old Department");
         Department newDept = new Department("New Department");
 
-        Employee employee = new Employee("Test","Test");
+        Employee employee = new Employee("Test", "Test");
         employee.setDepartment(oldDept);
         newDept.transferEmployeeIn(employee);
 
@@ -32,7 +32,7 @@ public class DepartmentTests {
         Manager manager = new Manager("Manager", "Managerson", "Manager of Testing", 100000);
         department.setDepartmentHead(manager);
 
-        assertEquals("Manager is not equal to the department head.",manager,department.getDepartmentHead());
+        assertEquals("Manager is not equal to the department head.", manager, department.getDepartmentHead());
     }
 
     @Test
@@ -41,7 +41,7 @@ public class DepartmentTests {
         Manager manager = new Manager("Manager", "Managerson", "Director of Testing", 100000);
         department.setDepartmentHead(manager);
 
-        assertEquals("Manager is not equal to the department head.",manager,department.getDepartmentHead());
+        assertEquals("Manager is not equal to the department head.", manager, department.getDepartmentHead());
     }
 
     @Test
@@ -51,6 +51,6 @@ public class DepartmentTests {
         department.setDepartmentHead(manager);
 
         assertNull("Manager title does not start with Manager or Director and therefor should be null.", department.getDepartmentHead());
-        assertNotEquals("Manager and department head are the same and they shouldn't be.",manager,department.getDepartmentHead());
+        assertNotEquals("Manager and department head are the same and they shouldn't be.", manager, department.getDepartmentHead());
     }
 }
