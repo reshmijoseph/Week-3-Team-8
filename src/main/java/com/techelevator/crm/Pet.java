@@ -29,7 +29,7 @@ public class Pet {
                                                         *
                                                             *
                                                                 *
-                                                                    *
+                                                                    */
 
 
     public Pet(String name, String species) {
@@ -71,7 +71,5 @@ public class Pet {
         }
         return listOutTheVaccinations;
     }
-
-    */
 
 }
