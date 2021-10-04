@@ -33,9 +33,6 @@ public class Employee extends Person implements Billable {
         }
     }
 
-
-    // getters and setters
-
     public int getEmployeeId() {
         return employeeId;
     }

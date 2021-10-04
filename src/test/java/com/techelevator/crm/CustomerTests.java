@@ -23,14 +23,14 @@ public class CustomerTests {
         testListOfServices.put("Sitting", 25.00);
 
         double result = sut.getBalanceDue(testListOfServices);
-        Assert.assertEquals(result, 175.00, 0.001);
+        Assert.assertEquals(175.00, result, 0.001);
     }
 
     @Test
     public void empty_list_yields_0() {
         Map<String, Double> testListOfServices = new HashMap<String, Double>();
         double result = sut.getBalanceDue(testListOfServices);
-        Assert.assertEquals(result, 0.00, 0.001);
+        Assert.assertEquals(0.00, result, 0.001);
     }
 
 }

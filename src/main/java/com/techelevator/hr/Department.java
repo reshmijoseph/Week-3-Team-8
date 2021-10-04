@@ -20,8 +20,6 @@ public class Department {
         this.departmentEmployees.add(employee);
     }
 
-    // getters and setters
-
     public int getDepartmentId() {
         return departmentId;
     }

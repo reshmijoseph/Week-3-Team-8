@@ -8,30 +8,6 @@ public class Pet {
     private String species;
     private List<String> vaccinations = new ArrayList<>();
 
-
-
-    /* APOLOGIES, BUT I WENT AHEAD AND FILLED THIS CLASS OUT AS WELL,
-    BECAUSE I NEEDED THE PET CLASS TO EXIST FOR MY CUSTOMER CLASS.
-    ONLY SCROLL DOWN IF YOU WANT TO SEE WHAT I CAME UP WITH.
-    *
-        *
-            *
-                *
-                    *
-                        *
-                            *
-                                *
-                                    *
-                                        *
-                                            *
-                                                *
-                                                    *
-                                                        *
-                                                            *
-                                                                *
-                                                                    */
-
-
     public Pet(String name, String species) {
         this.name = name;
         this.species = species;

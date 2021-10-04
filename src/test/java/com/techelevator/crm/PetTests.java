@@ -6,25 +6,6 @@ import java.util.List;
 
 public class PetTests {
 
-
-    /* APOLOGIES, BUT I FILLED OUT THIS PETTESTS AS WELL!
-    ONLY SCROLL DOWN IF YOU WANT TO SEE WHAT I CAME UP WITH!
-        *
-            *
-                *
-                    *
-                        *
-                            *
-                                *
-                                    *
-                                        *
-                                            *
-                                                *
-                                                    *
-                                                        *
-                                                            */
-
-
     private Pet sut;
 
     @Before
